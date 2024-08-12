@@ -6,6 +6,8 @@ import ClassComponent from './components/class-components'
 import FunctionComponent from './components/function-components'
 import ProductList from './components/products'
 import Users from './components/users'
+import ContextButtonComponent from './components/context-concept/button.jsx'
+import ContextTextComponent from './components/context-concept/text.jsx'
 
 const dummyProductData = ['Product 1', 'Product 2', 'Product 3', 'Product 4']
 
@@ -20,7 +22,9 @@ function App() {
       {/* <ClassComponent /> */}
       {/*   */}
       {/* <ProductList dummyProductData={dummyProductData} name="Duelurker" job="Student" /> */}
-      <Users />
+      {/* <Users /> */}
+      <ContextButtonComponent></ContextButtonComponent>
+      <ContextTextComponent></ContextTextComponent>
     </div>
   );
 }
