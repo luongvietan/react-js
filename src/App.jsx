@@ -8,6 +8,7 @@ import ProductList from './components/products'
 import Users from './components/users'
 import ContextButtonComponent from './components/context-concept/button.jsx'
 import ContextTextComponent from './components/context-concept/text.jsx'
+import ShoppingCart from './components/context-concept/shoppingcart.jsx'
 
 const dummyProductData = ['Product 1', 'Product 2', 'Product 3', 'Product 4']
 
@@ -25,6 +26,7 @@ function App() {
       {/* <Users /> */}
       <ContextButtonComponent></ContextButtonComponent>
       <ContextTextComponent></ContextTextComponent>
+      <ShoppingCart />
     </div>
   );
 }
