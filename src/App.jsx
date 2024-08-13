@@ -21,12 +21,11 @@ function App() {
         Duelurker
       </h1>
       {/* <ClassComponent /> */}
-      {/*   */}
       {/* <ProductList dummyProductData={dummyProductData} name="Duelurker" job="Student" /> */}
-      {/* <Users /> */}
-      <ContextButtonComponent></ContextButtonComponent>
-      <ContextTextComponent></ContextTextComponent>
-      <ShoppingCart />
+      <Users />
+      {/* <ContextButtonComponent></ContextButtonComponent>
+      <ContextTextComponent></ContextTextComponent> */}
+      {/* <ShoppingCart /> */}
     </div>
   );
 }
