@@ -14,14 +14,13 @@ const Users = () => {
             } else {
                 setUsersList([])
                 setPending(false)
-                console.log(`result else : `, result);
             }
             console.log(result);
         } catch (error) {
             console.log(error);
         }
     }
-
+ 
     useEffect(() => {
         fetchAllUser()
     }, [])
