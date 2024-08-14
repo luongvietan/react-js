@@ -2,7 +2,7 @@ import { useReducer } from 'react';
 
 function UseReducerExample() {
     const initialState = {
-        showTextFlag : false,
+        showTextFlag : true,
         changeTextFlag : false
     }
     const HIDE_TEXT = 'HIDE_TEXT'
@@ -34,12 +34,13 @@ function UseReducerExample() {
     const [state, dispatch] = useReducer(reducer, initialState)
     console.log(state);
     
-    return <div>
-        <h3>Use Reducer Hook Example</h3>
+    return (
+    <div>
+        {state?.showTextFlag ? <h3>Use Reducer Hook Example</h3> : <h3></h3>}
         <button onClick={()=> dispatch({type: HIDE_TEXT})}>Hide Text</button>
         <button onClick={()=> dispatch({type: SHOW_TEXT})}>Show Text</button>
         <button onClick={()=> dispatch({type: CHANGE_TEXT})}> Change Text Style</button>
-    </div>
+    </div>)
     
 }
 export default UseReducerExample
