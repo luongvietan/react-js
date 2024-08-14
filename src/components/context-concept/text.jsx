@@ -8,5 +8,5 @@ function ContextTextComponent() {
         backgroundColor: theme === 'light' ? 'white' : 'black',
         color: theme === 'light' ? 'red' : 'white'
     }}>Text Changing</h3>
-}
+} 
 export default ContextTextComponent
