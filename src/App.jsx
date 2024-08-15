@@ -10,6 +10,7 @@ import ContextButtonComponent from './components/context-concept/button.jsx'
 import ContextTextComponent from './components/context-concept/text.jsx'
 import ShoppingCart from './components/context-concept/shoppingcart.jsx'
 import UseReducerExample from './components/useReducer.jsx'
+import FormComponent from './components/form/index.jsx'
 
 const dummyProductData = ['Product 1', 'Product 2', 'Product 3', 'Product 4']
 
@@ -27,7 +28,8 @@ function App() {
       {/* <ContextButtonComponent></ContextButtonComponent>
       <ContextTextComponent></ContextTextComponent> */}
       {/* <ShoppingCart /> */}
-      <UseReducerExample/>
+      {/* <UseReducerExample/> */}
+      <FormComponent />
     </div>
   );
 }
