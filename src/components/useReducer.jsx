@@ -36,11 +36,15 @@ function UseReducerExample() {
     
     return (
     <div>
-        {state?.showTextFlag ? <h3>Use Reducer Hook Example</h3> : <h3></h3>}
+        {state?.showTextFlag ? <h3 style={
+            {
+                color: state?.changeTextFlag ? 'white' : 'black',
+                background: state?.changeTextFlag ? 'black' : 'white'
+            }}>Use Reducer Hook Example</h3> : <h3></h3>
+        }
         <button onClick={()=> dispatch({type: HIDE_TEXT})}>Hide Text</button>
         <button onClick={()=> dispatch({type: SHOW_TEXT})}>Show Text</button>
         <button onClick={()=> dispatch({type: CHANGE_TEXT})}> Change Text Style</button>
     </div>)
-    
 }
 export default UseReducerExample
