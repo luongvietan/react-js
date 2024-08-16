@@ -5,7 +5,9 @@ import './index.css'
 import GlobalState from './context/index.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <GlobalState>
-    <App />
-  </GlobalState>
+  <StrictMode>
+    <GlobalState>
+      <App />
+    </GlobalState>
+  </StrictMode>  
 )
