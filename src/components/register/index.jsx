@@ -12,7 +12,6 @@ export default function RegisterComponent() {
     const [registerData, setRegisterData] = useState(initialRegisterData)
     function handleRegisterSubmit(event) {
         event.preventDefault();
-        console.log(registerData);
         setRegisterData(initialRegisterData);
     }
     return <div>

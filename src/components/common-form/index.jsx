@@ -68,7 +68,7 @@ function CommonForm({
           )
         : null}
       <div style={{ marginTop: "12px" }}>
-        <button type="submit">{buttonText || "Submit"}</button>
+        <button type="submit" style={{fontSize:'15px'}}>{buttonText || "Submit"}</button>
       </div>
     </form>
   );
