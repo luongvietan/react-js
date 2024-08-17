@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CommonForm from "../common-form";
+import { registerFormElements } from "../../config";
 
 const initialRegisterData = {
     name: "",
@@ -12,15 +13,17 @@ export default function RegisterComponent() {
     function handleRegisterSubmit(event) {
         event.preventDefault();
         console.log(registerData);
+        setRegisterData(initialRegisterData);
     }
     return <div>
         <h1>Register page/component
             <CommonForm
-                formControls={registerElements}
+                formControls={registerFormElements}
                 formData={registerData}
                 setFormData={setRegisterData}
                 buttonText={'Register'}
                 onHandleSubmit={handleRegisterSubmit}
             />
-        </h1></div>
+        </h1>
+    </div>
 }
